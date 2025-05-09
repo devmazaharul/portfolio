@@ -4,7 +4,7 @@ export const source = {
   title: "Frontend Focused Full Stack Developer ",
   description:
     "  I’m a full-stack web developer passionate about building scalable, modern applications using Next.js, Node.js, Prisma, and PostgreSQL — from SaaS platforms to custom APIs and dashboards.",
-    role:"backend engineer",
+    role:"Full stack Dev.",
     experience:"4y+", 
     current:"Remote job",
   contactInfo: {
@@ -45,18 +45,26 @@ export const source = {
       githubLink: "https://github.com/devmazaharul/glowniba"
     },
     {
-      name: "Project 2 – E-Commerce Platform",
+      name: "Easy hisab - Manage store",
       description:
-        "An end-to-end e-commerce solution with an admin panel, order tracking, product management, and secure payment integration.",
-      liveLink: "#",
-      githubLink: "#"
+        "A user-friendly store management system with product tracking, inventory control, admin dashboard, and seamless order handling — built for small businesses.",
+      liveLink: "https://bdeasy-drab.vercel.app",
+      githubLink: "https://github.com/devmazaharul/Hisab_client"
     },
     {
-      name: "Project 3 – Admin Dashboard",
+      name: "Study - Fronted design by next js",
       description:
-        "A custom admin dashboard with user management, data visualizations, and role-based access using JWT authentication.",
-      liveLink: "#",
-      githubLink: "#"
+        "A sleek study platform frontend built with Next.js, featuring responsive design, clean UI components, and optimized performance for educational use.",
+      liveLink: "https://bdteach.vercel.app/",
+      githubLink: "https://github.com/devmazaharul/teaching"
+    },
+    {
+      name: "Awesome portfolio",
+      description:
+      "A modern and responsive developer portfolio built with Next.js, showcasing projects, skills, and a clean UI for personal branding."
+      ,
+      liveLink: "https://mazaportfolio1.vercel.app/",
+      githubLink: "https://github.com/devmazaharul/dorbes_portfolio"
     },
   ]
 

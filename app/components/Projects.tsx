@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <>
       <Commoncard
-        title="Full-Stack Project Solutions"
+        title="End-to-End Web Development"
         tag="project"
         name="Projects"
       >
@@ -19,7 +19,7 @@ const Projects = () => {
           platforms, e-commerce systems, admin dashboards, and more.
         </p>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-2">
+        <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {source.projects.map((project, idx) => (
             <motion.div
             key={idx}
@@ -35,11 +35,11 @@ const Projects = () => {
               <p className="text-gray-400 dark:text-gray-400 mb-4 text-sm">
                 {project.description}
               </p>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-3">
                 <Link
                   href={project.liveLink}
                   target="_blank"
-                  className="btn btn-primary gap-1 transition text-sm"
+                  className="btn btn-primary flex gap-1 transition text-sm"
                 >
                   <ExternalLink size={16} /> Live Site
                 </Link>

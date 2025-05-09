@@ -17,10 +17,10 @@ const About = () => {
 
   useEffect(() => {
     const controls = [
-      animate(expCount, 5, { duration: 2 }),
-      animate(projectCount, 100, { duration: 2 }),
-      animate(reviewCount, 50, { duration: 2 }),
-      animate(runningCount, 20, { duration: 2 }),
+      animate(expCount, 5, { duration: 3 }),
+      animate(projectCount, 100, { duration: 3 }),
+      animate(reviewCount, 50, { duration: 3 }),
+      animate(runningCount, 20, { duration: 3 }),
     ];
     return () => controls.forEach(control => control.stop());
   }, [expCount,roundedProject,roundedReview,runningCount,projectCount]);

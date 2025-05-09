@@ -37,7 +37,7 @@ const Sidebar = () => {
         <h1 className="text-2xl capitalize font-bold text-gray-900 dark:text-white">
          {name || " Mazaharul Islam"}
         </h1>
-        <p className="text-sm capitalize text-gray-600 dark:text-gray-400 ">
+        <p className="text-sm capitalize rounded-sm dark:text-gray-400 text-gray-500 font-medium w-fit mx-auto">
           {role || "Software Engineer"} 
         </p>
       </div>
@@ -50,7 +50,7 @@ const Sidebar = () => {
       >
         <div className='border-t capitalize leading-8 py-2 border-gray-200'>
 
-        <div className='flex text-gray-600 items-center justify-between'>
+        <div className='flex text-gray-600 items-center justify-between overflow-hidden'>
             <p>Residence:</p>
             <p>{country || "Bangladesh"}</p>
           </div>
