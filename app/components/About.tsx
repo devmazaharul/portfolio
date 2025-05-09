@@ -34,7 +34,7 @@ const About = () => {
 
   return (
     <Commoncard name='about' title="About me" tag="about">
-      <p className='text-gray-400 leading-7'>
+      <p className='text-gray-400 leading-7 md:w-11/12'>
         I am Mazaharul Islam, a dedicated web developer with a passion for crafting dynamic and user-friendly websites.
         I specialize in creating seamless digital experiences using Next.js, React.js and Node.js. My goal is to turn ideas into reality with clean, efficient code.
         I also have experience with YAML, Docker, AWS, Swagger/OpenAPI, and have strong English communication skills.

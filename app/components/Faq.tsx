@@ -35,7 +35,7 @@ export default function Faq() {
   }
 
   return (
-    <section className="py-14 px-6 shadow-2xl shadow-gray-100 border border-gray-200 rounded-2xl dark:bg-zinc-900 text-black dark:text-white transition-colors duration-300">
+    <section className="py-14 px-6 shadow-2xl shadow-gray-100 border border-gray-100 rounded-2xl dark:bg-zinc-900 text-black dark:text-white transition-colors duration-300">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-10">❓Frequently Asked Questions</h2>
         <div className="space-y-4">
@@ -46,7 +46,7 @@ export default function Faq() {
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full cursor-pointer  flex justify-between items-center p-5 text-left  dark:bg-zinc-800  dark:hover:bg-zinc-700 transition"
+                className="w-full cursor-pointer border border-gray-100 hover:border-gray-00  flex justify-between items-center p-5 text-left  dark:bg-zinc-800  dark:hover:bg-zinc-700 transition"
               >
                 <span className="font-medium ">{faq.question}</span>
                 <ChevronDown

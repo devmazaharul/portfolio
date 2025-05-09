@@ -13,11 +13,11 @@ const Hero = () => {
 
   return (
 
-    <div className="shadow-2xl py-4 px-6 shadow-gray-100 rounded-2xl border border-gray-200 w-full dark:bg-zinc-900 dark:border-zinc-800">
+    <div className="shadow-2xl py-4 px-6 shadow-gray-100 rounded-2xl border border-gray-100 w-full dark:bg-zinc-900 dark:border-zinc-800">
         <div className='rounded-full mb-3 text-gray-600 gap-2 px-2 py-1 shadow-2xl shadow-gray-100 border border-gray-200 w-fit flex items-center'>
         <CiBookmarkPlus/> Introduce
       </div>
-      <div className="md:grid grid-cols-3 gap-4 space-y-4 md:space-y-0">
+      <div className="md:grid grid-cols-3 gap-4 space-y-6 md:space-y-0">
         <motion.div
           className="col-span-2"
           initial={{ opacity: 0, x: -50 }}
@@ -29,7 +29,7 @@ const Hero = () => {
           </h1>
           <p className="text-gray-400 text-justify dark:text-gray-400 py-2">{description}</p>
 
-        <div className="pb-1 py-4 flex items-center gap-3">
+        <div className="pb-1 py-2 flex items-center gap-3">
           <div className="flex items-center gap-1 text-gray-400"><GiNetworkBars className="text-emerald-400"/> <p>Available</p></div>
           <div className="flex items-center gap-1 text-gray-400"><IoFolderOpenOutline size={18} className="text-purple-500"/> <p>Open to remote job</p></div>
    
@@ -56,7 +56,7 @@ const Hero = () => {
             height={500}
             alt="Web Development"
             src="https://static.vecteezy.com/system/resources/previews/050/980/778/non_2x/3d-programmer-doing-website-coding-illustration-png.png"
-            className="w-full h-full object-cover "
+            className="w-full h-[190px] md:h-[200px] object-contain "
           />
         </motion.div>
       </div>

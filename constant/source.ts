@@ -3,7 +3,7 @@ export const source = {
   name:"mazaharul islam",
   title: "Frontend Focused Full Stack Developer ",
   description:
-    "I’m a passionate full-stack web developer specialized in building scalable, modern applications using technologies like Next.js, Node.js, Prisma, and PostgreSQL. Whether it’s a SaaS platform, custom API, or admin dashboard.",
+    "  I’m a full-stack web developer passionate about building scalable, modern applications using Next.js, Node.js, Prisma, and PostgreSQL — from SaaS platforms to custom APIs and dashboards.",
     role:"backend engineer",
     experience:"4y+", 
     current:"Remote job",

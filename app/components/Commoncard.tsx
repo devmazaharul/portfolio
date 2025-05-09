@@ -24,7 +24,7 @@ const Commoncard = ({tag,name,title,children}:{tag:TagType,name:string,title:str
 
 
   return (
-    <div className="shadow-2xl  shadow-gray-100 p-2 rounded-2xl border border-gray-200  w-full">
+    <div className="shadow-2xl  shadow-gray-100 p-2 rounded-2xl border border-gray-100  w-full">
      <div className='px-4 py-2'>
      <div className='rounded-full text-gray-600 gap-1 px-2 py-1 shadow-2xl shadow-gray-100 border border-gray-200 w-fit flex items-center'>
         {stats[tag].icon}

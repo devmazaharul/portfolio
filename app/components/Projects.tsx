@@ -14,7 +14,7 @@ const Projects = () => {
         tag="project"
         name="Projects"
       >
-        <p className="text-gray-500 dark:text-gray-400 text-base sm:text-lg">
+        <p className="text-gray-400 dark:text-gray-400   md:w-6/7" >
           I build scalable, modern web solutions from idea to deployment — SaaS
           platforms, e-commerce systems, admin dashboards, and more.
         </p>

@@ -2,9 +2,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Commoncard from './Commoncard';
-import { Label } from '@/components/ui/label';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
 
 const ContactForm = () => {
@@ -26,88 +23,116 @@ const ContactForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if(!formData.email || !formData.name ){
+    if (!formData.email || !formData.name) {
       toast.error('Please provide name and email', {
         description: new Date().toLocaleTimeString('en-us', {
           timeStyle: 'full',
         }),
-        action: {
-          label: 'Undo',
-          onClick: () => console.log('Undo'),
-        },
       });
-      return 
+      return;
     }
-    toast('Thans for contact', {
+    toast.success('Thanks for contacting!', {
       description: new Date().toLocaleTimeString('en-us', {
         timeStyle: 'full',
       }),
-      action: {
-        label: 'Undo',
-        onClick: () => console.log('Undo'),
-      },
     });
   };
 
   return (
     <Commoncard title="Contact us" name="contact" tag="contact">
-      <p className="text-gray-400">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis fugit
-        animi dicta quam eius rerum quod eligendi quos porro dolores.
+      <p className="text-gray-500 md:w-2/3">
+        Let us know how we can help. Fill out the form below to get in touch!
       </p>
+
       <motion.div
-        className="max-fit mx-auto p-4 my-4 "
+        className="md:w-1/2 my-6 w-full"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <form onSubmit={handleSubmit} className="md:w-1/2 mx-auto">
+        <form onSubmit={handleSubmit} className="space-y-4">
+          {/* Name */}
           <motion.div
-            className="mb-4"
             initial={{ y: -10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="grid w-full max-w-sm items-center gap-1.5">
-              <Label htmlFor="email">Name</Label>
-              <Input type="text" id="name" placeholder="Name" />
-            </div>
+            <label
+              htmlFor="name"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
+              Name
+            </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your full name"
+              value={formData.name}
+              onChange={handleChange}
+              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
+              required
+            />
           </motion.div>
 
+          {/* Email */}
           <motion.div
-            className="mb-4"
+            initial={{ y: -10, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
+              Email
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="you@example.com"
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
+              required
+            />
+          </motion.div>
+
+          {/* Message */}
+          <motion.div
             initial={{ y: -10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <div className="grid w-full max-w-sm items-center gap-1.5">
-              <Label htmlFor="email">Email</Label>
-              <Input type="email" id="email" placeholder="Email" />
-            </div>
-          </motion.div>
-
-          <motion.div
-            className="mb-3"
-            initial={{ y: -10, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            <label htmlFor="message" className="block text-gray-700">
+            <label
+              htmlFor="message"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
               Message
             </label>
-            <Textarea
+            <textarea
               id="message"
               name="message"
+              rows={5}
+              placeholder="Write your message here..."
               value={formData.message}
               onChange={handleChange}
+              className="w-full border border-gray-300 rounded-lg px-4 py-3 h-[100px] max-h-[200px] focus:outline-none focus:ring-2 focus:ring-gray-400"
               required
-              className="w-full p-2  border rounded-md"
-              rows={4}
             />
           </motion.div>
 
-          <button className="btn btn-primary text-sm"> Send Message</button>
+          {/* Submit Button */}
+          <motion.div
+            initial={{ y: -10, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
+            <button type="submit" className="btn btn-primary">
+              Send Message
+            </button>
+          </motion.div>
         </form>
       </motion.div>
     </Commoncard>

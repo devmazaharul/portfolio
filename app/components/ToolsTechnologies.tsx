@@ -27,7 +27,7 @@ export default function ToolsTechnologies() {
   return (
 <>
 <Commoncard tag="tools" title="🛠 Tools & Technologies" name="tools">
-  <p className="text-gray-400">
+  <p className="text-gray-400 md:w-7/8">
   I work with a range of essential tools like VS Code, Git, GitHub, Docker, Figma, and Postman that streamline my development workflow and boost productivity.
   </p>
 <div className="grid py-8 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
@@ -38,8 +38,8 @@ export default function ToolsTechnologies() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="border border-gray-200  dark:bg-zinc-800 shadow-2xl
-              shadow-gray-100 rounded-2xl p-6 flex flex-col items-center justify-center transition"
+              className="border border-gray-100 hover:border-gray-200  dark:bg-zinc-800 shadow-md
+              shadow-gray-50 rounded-2xl p-6 flex flex-col items-center justify-center transition"
             >
               {tool.icon}
               <p className="mt-2 text-sm font-semibold">{tool.name}</p>
