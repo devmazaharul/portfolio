@@ -1,7 +1,8 @@
 
 export const source = {
   name:"mazaharul islam",
-  title: "Frontend Focused Full Stack Developer ",
+  title: "Frontend-Oriented Full Stack Engineer",
+  contactLink:"https://www.linkedin.com/in/mazaharul-islam-0948a333a/",
   description:
     "  I’m a full-stack web developer passionate about building scalable, modern applications using Next.js, Node.js, Prisma, and PostgreSQL — from SaaS platforms to custom APIs and dashboards.",
     role:"Full stack Dev.",
