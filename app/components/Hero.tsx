@@ -55,7 +55,7 @@ const Hero = () => {
             width={500}
             height={500}
             alt="Web Development"
-            src="https://static.vecteezy.com/system/resources/previews/050/980/778/non_2x/3d-programmer-doing-website-coding-illustration-png.png"
+            src="/heroimg.webp"
             className="w-full h-[190px] md:h-[200px] object-contain "
           />
         </motion.div>
