@@ -23,7 +23,7 @@ const About = () => {
       animate(runningCount, 20, { duration: 3 }),
     ];
     return () => controls.forEach(control => control.stop());
-  }, [expCount,roundedProject,roundedReview,runningCount,projectCount]);
+  }, [expCount,roundedProject,roundedReview,runningCount,projectCount,reviewCount]);
 
   const stats = [
     { label: "Years+ Experience", value: roundedExp, icon: <Briefcase className="text-gray-600 w-6 h-6" /> },

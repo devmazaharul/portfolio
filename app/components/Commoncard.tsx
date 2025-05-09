@@ -1,6 +1,5 @@
 import { colorShem } from '@/constant/source';
 import React from 'react';
-import { TbCameraSelfie } from "react-icons/tb";
 import { MdCleaningServices } from "react-icons/md";
 import { SiHyperskill } from "react-icons/si";
 import { GoProject } from "react-icons/go";
