@@ -40,13 +40,17 @@ export default function Faq() {
         <h2 className="text-3xl font-bold text-center mb-10">❓Frequently Asked Questions</h2>
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className=" dark:border-zinc-700 rounded-2xl overflow-hidden  border border-gray-100 shadow-2xl shadow-gray-100 not-last-of-type:"
+            <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
+            viewport={{ once: true }}
+              className=" dark:border-zinc-700 rounded-2xl overflow-hidden  border border-gray-100  not-last-of-type:"
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full cursor-pointer border border-gray-100 hover:border-gray-00  flex justify-between items-center p-5 text-left  dark:bg-zinc-800  dark:hover:bg-zinc-700 transition"
+                className="w-full cursor-pointer  flex justify-between items-center p-5 text-left  dark:bg-zinc-800  dark:hover:bg-zinc-700 transition"
               >
                 <span className="font-medium ">{faq.question}</span>
                 <ChevronDown
@@ -70,7 +74,7 @@ export default function Faq() {
   )}
 </AnimatePresence>
 
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

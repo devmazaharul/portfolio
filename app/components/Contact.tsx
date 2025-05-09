@@ -70,7 +70,7 @@ const ContactForm = () => {
               placeholder="Your full name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
+              className="w-full border border-gray-200 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
               required
             />
           </motion.div>
@@ -94,7 +94,7 @@ const ContactForm = () => {
               placeholder="you@example.com"
               value={formData.email}
               onChange={handleChange}
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
+              className="w-full border border-gray-200 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
               required
             />
           </motion.div>
@@ -118,7 +118,7 @@ const ContactForm = () => {
               placeholder="Write your message here..."
               value={formData.message}
               onChange={handleChange}
-              className="w-full border border-gray-300 rounded-lg px-4 py-3 h-[100px] max-h-[200px] focus:outline-none focus:ring-2 focus:ring-gray-400"
+              className="w-full border border-gray-200 rounded-lg px-4 py-3 h-[100px] max-h-[200px] focus:outline-none focus:ring-2 focus:ring-gray-400"
               required
             />
           </motion.div>

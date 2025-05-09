@@ -65,10 +65,15 @@ const Sidebar = () => {
 
         <div  className='border-t leading-8 py-2 border-gray-200'>
           <h1 className='text-lg font-semibold pb-1'>Skills</h1>
-            {source.main_skills.slice(0,6).map((item)=><p className=' cursor-context-menu p-1 px-2 m-1 hover:scale-105 ease-in-out duration-200 hover:bg-gray-50 hover:font-semibold rounded-md' key={item.id}>{item.title}</p>)}
+            {source.main_skills.slice(0,6).map((item,idx)=>
+            <motion.div   key={idx}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: idx * 0.2 }}
+            viewport={{ once: true }} className=' cursor-context-menu p-1 px-2 m-1 hover:scale-105 ease-in-out duration-200 hover:bg-gray-50 hover:font-semibold rounded-md'>{item.title}</motion.div>)}
           
         </div>
-         <button className='btn btn-secondary w-full border border-gray-200 font-medium'>Resume</button>
+         <button className='btn btn-secondary w-full  font-medium'>Resume</button>
       
       </motion.div>
 

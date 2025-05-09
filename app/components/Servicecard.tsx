@@ -44,11 +44,13 @@ export default function Servicecard() {
     <div className="w-full mx-auto px-4 py-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
       {services.map((service, idx) => (
         <motion.div
-          key={idx}
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: idx * 0.1 }}
-          viewport={{ once: true }}
+        key={idx}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: idx * 0.2 }}
+        viewport={{ once: true }}
+
+
           className={`${service?.color} dark:bg-zinc-900 shadow-4xl shadow-gray-100 dark:shadow-zinc-700  dark:border-zinc-800 rounded-2xl p-5   dark:hover:border-zinc-600 transition duration-300`}
         >
           <div className="mb-4">{service.icon}</div>
