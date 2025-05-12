@@ -74,7 +74,7 @@ const Sidebar = () => {
             viewport={{ once: true }} className=' cursor-context-menu p-1 px-2 m-1 hover:scale-105 ease-in-out duration-200 hover:bg-gray-50 hover:font-semibold rounded-md'>{item.title}</motion.div>)}
           
         </div>
-         <Link href={"/my_resume.pdf"} target='_blank' className='btn btn-secondary w-full  font-medium'>Resume</Link>
+         <Link href={"/mazaharul_resume.pdf"} target='_blank' className='btn btn-secondary w-full  font-medium'>Resume</Link>
       
       </motion.div>
 
