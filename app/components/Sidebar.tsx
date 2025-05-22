@@ -17,14 +17,14 @@ import { RiTailwindCssFill } from "react-icons/ri";
 const Sidebar = () => {
 
   const iconArr=[
-<BiLogoTypescript className='text-blue-400'/>,
-  <RiNextjsFill className='text-gray-700'/>,
-  <FaReact className='text-blue-500'/>,
-  <IoLogoNodejs className='text-green-500'/>,
-  <SiExpress className='text-gray-800'/>,
-  <SiMongodb className='text-green-500'/>,
-  <SiPrisma className='text-gray-500'/>,
-    <RiTailwindCssFill className='text-blue-300'/>
+{icon:<BiLogoTypescript className='text-blue-400'/>,key:1},
+ {icon: <RiNextjsFill className='text-gray-700'/>,key:2},
+  {icon:<FaReact className='text-blue-500'/>,key:3},
+  {icon:<IoLogoNodejs className='text-green-500'/>,key:4},
+  {icon:<SiExpress className='text-gray-800'/>,key:4},
+  {icon:<SiMongodb className='text-green-500'/>,key:5},
+ {icon: <SiPrisma className='text-gray-500'/>,key:6},
+   {icon: <RiTailwindCssFill className='text-blue-300'/>,key:7}
   ]
 
 
@@ -100,7 +100,7 @@ const Sidebar = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: idx * 0.2 }}
-            viewport={{ once: true }} className='  m-1 ease-in-out text-center border text-gray-500 border-gray-200 rounded-md px-1 flex items-center gap-1'>{iconArr[idx]} {item.title}</motion.div>)}
+            viewport={{ once: true }} className='  m-1 ease-in-out text-center border text-gray-500 border-gray-200 rounded-md px-1 flex items-center gap-1'>{iconArr[idx].icon} {item.title}</motion.div>)}
          </div>
           
         </div>
