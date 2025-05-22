@@ -18,9 +18,9 @@ const About = () => {
   useEffect(() => {
     const controls = [
       animate(expCount, 5, { duration: 3 }),
-      animate(projectCount, 100, { duration: 3 }),
-      animate(reviewCount, 50, { duration: 3 }),
-      animate(runningCount, 20, { duration: 3 }),
+      animate(projectCount, 67, { duration: 3 }),
+      animate(reviewCount, 59, { duration: 3 }),
+      animate(runningCount, 4, { duration: 3 }),
     ];
     return () => controls.forEach(control => control.stop());
   }, [expCount,roundedProject,roundedReview,runningCount,projectCount,reviewCount]);

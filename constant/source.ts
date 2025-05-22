@@ -1,4 +1,5 @@
 
+
 export const source = {
   name:"mazaharul islam",
   title: "Frontend-Oriented Full Stack Engineer",
@@ -18,16 +19,20 @@ export const source = {
     country: "Bangladesh",
   },
   main_skills: [
-    { id: 8, title: "TypeScript", exp: "2y+" },
-    { id: 11, title: "REST Full API", exp: "3y+" },
+        { id: 8, title: "TypeScript", exp: "2y+" },
+
     { id: 1, title: "Next.js", exp: "3y+" },
-    { id: 2, title: "Node.js", exp: "3y+" },
-    { id: 3, title: "Express.js", exp: "3y+" },
-    { id: 4, title: "React.js", exp: "3y+" },
+        { id: 4, title: "React.js", exp: "3y+" },
+    { id: 2, title: "Node", exp: "3y+" },
+    { id: 3, title: "Express", exp: "3y+" },
     { id: 5, title: "MongoDB", exp: "3y+" },
-    { id: 6, title: "PostgreSQL", exp: "2y+" },
-    { id: 7, title: "Prisma ORM", exp: "2y+" },
-    { id: 9, title: "Tailwind CSS", exp: "2y+" },
+  
+ { id: 7, title: "Prisma", exp: "2y+" },
+  { id: 9, title: "Tailwind", exp: "2y+" },
+ { id: 11, title: "Javascript", exp: "4y+" },
+     { id: 11, title: "REST Full API", exp: "3y+" },
+    
+      { id: 6, title: "PostgreSQL", exp: "2y+" },
     { id: 10, title: "JavaScript (ES6+)", exp: "4y+" }
   ],
   others_skills: [

@@ -26,9 +26,11 @@ export default function RootLayout({
     <html lang="en" className={font1.className}>
       <body className="antialiased bg-white text-gray-900  ">
         <div className="grid md:grid-cols-4  p-4 gap-6">
+          
           <div className="md:col-span-1  w-full h-full p-2">
           <Sidebar/>
           </div>
+
           <div className="md:col-span-3 mt-3 md:overflow-y-auto md:max-h-[130vh] scrollbar-hide">
   {children}
 </div>
