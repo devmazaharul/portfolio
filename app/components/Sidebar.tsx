@@ -1,5 +1,4 @@
 'use client';
-
 import Image from 'next/image';
 import React from 'react';
 import { motion } from 'framer-motion';
@@ -7,14 +6,11 @@ import { source } from '@/constant/source';
 import Link from 'next/link';
 import { FaGithub } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io5";
-import { FaJsSquare } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import { SiMongodb } from "react-icons/si";
-import { BiLogoPostgresql } from "react-icons/bi";
 import { SiPrisma } from "react-icons/si";
-
 import { BiLogoTypescript } from "react-icons/bi";
 import { RiTailwindCssFill } from "react-icons/ri";
 
