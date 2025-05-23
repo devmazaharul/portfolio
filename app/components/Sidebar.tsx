@@ -35,7 +35,7 @@ const Sidebar = () => {
       initial={{ x: -50, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
-      className="h-full w-full  border border-gray-100 md:max-w-xs  dark:bg-neutral-900   dark:border-neutral-700 rounded-xl shadow-2xl shadow-gray-100 p-4 flex flex-col items-center gap-4"
+      className="h-full w-full  border border-gray-100 md:max-w-xs  dark:bg-neutral-900   dark:border-neutral-700 rounded-xl shadow-2xl shadow-gray-100 py-2 px-4 flex flex-col items-center gap-2"
     >
       <motion.div
         initial={{ scale: 0.9 }}
@@ -66,9 +66,9 @@ const Sidebar = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4 }}
-        className="mt-4 space-y-3 w-full"
+        className="mt-1 space-y-3 w-full"
       >
-        <div className='border-t capitalize leading-9 py-2 border-gray-200'>
+        <div className='border-t capitalize leading-9  border-gray-200'>
 
         <div className='flex text-gray-600 items-center justify-between overflow-hidden'>
             <p>Github:</p>
