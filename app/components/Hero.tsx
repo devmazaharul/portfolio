@@ -37,7 +37,7 @@ const Hero = () => {
         </div>
 
         <div className="my-1">
-          <Link href={source.contactLink} className="gap-1 btn btn-primary rounded-bl-xl rounded-tr-xl w-fit">
+          <Link href={source.contactLink} target="_blank" className="gap-1 btn btn-primary rounded-bl-xl rounded-tr-xl w-fit">
           <MessageSquareShare size={18} />Hire me
           </Link>
         </div>
