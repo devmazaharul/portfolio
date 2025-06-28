@@ -55,11 +55,11 @@ const Sidebar = () => {
       >
         <Image
           alt="owner image"
-          className="rounded-full border-2 border-blue-300 shadow-2xl shadow-gray-400 object-cover"
+          className="rounded-full border-2 border-blue-300 shadow-2xl shadow-gray-400 object-cover h-[130px] w-[120px] "
           width={120}
-          height={120}
+          height={200}
           src={
-            'https://amimazaharul.vercel.app/_next/image?url=%2Fmazaharul-islam.png&w=384&q=75'
+            'https://amimazaharul.vercel.app/_next/image?url=%2Fmaza-original_processed1.jpg&w=640&q=75'
           }
         />
       </motion.div>

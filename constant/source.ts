@@ -6,7 +6,7 @@ export const source = {
   contactLink:"https://www.linkedin.com/in/mazaharul-islam-0948a333a/",
   description:
     "  I’m a full-stack web developer passionate about building scalable, modern applications using Next.js, Node.js, Prisma, and PostgreSQL — from SaaS platforms to custom APIs and dashboards.",
-    role:"Full stack Dev.",
+    role:"Full stack web Dev.",
     experience:"4y+", 
     current:"Remote job",
   contactInfo: {
@@ -14,7 +14,7 @@ export const source = {
     distric: "Jessore",
     upozela: "jessore sadar",
     union: "narendrapur",
-    number: "01797575932",
+    number: "01886575932",
     email: "devmazaharul@gmail.com",
     country: "Bangladesh",
   },
