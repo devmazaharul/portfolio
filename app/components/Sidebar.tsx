@@ -104,8 +104,8 @@ const Sidebar = () => {
          </div>
           
         </div>
-         <Link href={"/Mazaharul_Islam_Resume.pdf"} target='_blank' className='btn btn-primary w-full text-gray-100  font-semibold'>Resume</Link>
-      
+         {/* <Link href={"/Mazaharul_Islam_Resume.pdf"} target='_blank' className='btn btn-primary w-full text-gray-100  font-semibold'>Resume</Link>
+       */}
       </motion.div>
 
     </motion.aside>

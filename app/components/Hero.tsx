@@ -7,6 +7,7 @@ import { GiNetworkBars } from "react-icons/gi";
 import { IoFolderOpenOutline } from "react-icons/io5";
 import { CiBookmarkPlus } from "react-icons/ci";
 import { MessageSquareShare } from 'lucide-react';
+import { SiReaddotcv } from "react-icons/si";
 
 const Hero = () => {
   const { title, description } = source;
@@ -36,10 +37,13 @@ const Hero = () => {
          
         </div>
 
-        <div className="my-1">
+        <div className="my-1 flex items-center gap-2">
+
           <Link href={source.contactLink} className="gap-1 btn btn-primary rounded-bl-xl rounded-tr-xl w-fit">
           <MessageSquareShare size={18} />Hire me
           </Link>
+             <Link href={"/Mazaharul_Islam_Resume.pdf"} target='_blank' className='btn  hover:bg-gray-100 flex gap-2 items-center  w-fit  border border-gray-200'><SiReaddotcv/>Resume</Link>
+      
         </div>
        
         </motion.div>
