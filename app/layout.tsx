@@ -31,7 +31,7 @@ export default function RootLayout({
           <Sidebar/>
           </div>
 
-          <div className="md:col-span-3 mt-3 md:overflow-y-auto md:max-h-[130vh] scrollbar-hide">
+          <div className="md:col-span-3 mt-3 md:overflow-y-auto md:max-h-[170vh] scrollbar-hide">
   {children}
 </div>
 
