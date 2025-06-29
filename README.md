@@ -27,13 +27,7 @@ A money transfer and payment gateway backend built with Node.js, Express, and Mo
 A full-stack e-commerce app built with next.js app router, tailwind css, and MongoDB.  
 ✔ JWT auth, admin dashboard, product management.
 
-### 🔗 [Portfolio Website](https://github.com/mazaharul/my-portfolio)
-Personal responsive portfolio built with React + Tailwind CSS.  
-✔ Clean UI, project showcase, dark mode.
-
 ---
-
-
 
 ## 📬 Let's Connect
 
