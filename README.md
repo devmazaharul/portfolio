@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 👋 Hi, I'm Mazaharul Islam
 
-## Getting Started
+🚀 Passionate Full Stack Web Developer | Node.js | React | MongoDB | Docker
 
-First, run the development server:
+I'm a self-taught developer from Bangladesh 🇧🇩, specializing in building **scalable backend APIs** and modern web apps. Currently, I'm working on a project called **mazaPay**, a money transfer/payment gateway app built with Node.js and MongoDB.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Language:** JavaScript (ES6+)
+- **Backend:** Node.js, Express.js
+- **Frontend:** React, Next.js, Tailwind CSS
+- **Database:** MongoDB, Mongoose
+- **DevOps:** Docker, Docker Compose
+- **Tools:** Git, Postman, VS Code, swagger
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📂 Featured Projects
 
-To learn more about Next.js, take a look at the following resources:
+### 🔗 [mazaPay API](https://github.com/devmazaharul/mazaPay)
+A money transfer and payment gateway backend built with Node.js, Express, and MongoDB.  
+✔ JWT auth, error handling, Dockerized, Mongo Express setup.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🔗 [Glow niba](https://github.com/devmazaharul/glowniba)
+A full-stack e-commerce app built with next.js app router, tailwind css, and MongoDB.  
+✔ JWT auth, admin dashboard, product management.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🔗 [Portfolio Website](https://github.com/mazaharul/my-portfolio)
+Personal responsive portfolio built with React + Tailwind CSS.  
+✔ Clean UI, project showcase, dark mode.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## 📬 Let's Connect
+
+- 🌐 Portfolio: [mazaharul.dev](https://newmazaharul.vercel.app)
+- 💼 LinkedIn: [linkedin.com/in/mazaharul](https://www.linkedin.com/in/mazaharul-islam-0948a333a)
+- 📧 Email: devmazaharul@gmail.com
+
+---
+
+_“Code is like humor. When you have to explain it, it’s bad.” – Cory House_
+
