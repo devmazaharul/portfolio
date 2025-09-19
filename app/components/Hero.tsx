@@ -42,7 +42,7 @@ const Hero = () => {
           <Link  href={source.contactLink} target="_blank" className="gap-1 btn btn-primary rounded-bl-xl rounded-tr-xl w-fit">
           <MessageSquareShare size={18} />Hire me
           </Link>
-             <Link href={"/resume_mazaharul.pdf"} target='_blank' className='btn  hover:bg-gray-100 flex gap-2 items-center  w-fit  border border-gray-200'><SiReaddotcv/>Resume</Link>
+             <Link href={"/resume_mazaharul_islam.pdf"} target='_blank' className='btn  hover:bg-gray-100 flex gap-2 items-center  w-fit  border border-gray-200'><SiReaddotcv/>Resume</Link>
       
         </div>
        
