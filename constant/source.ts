@@ -47,6 +47,19 @@ export const source = {
   ],
   projects: [
     {
+      name: "FlexIn – Ecommerce Platform",
+      description:
+        "A complete product-based online store wit cart, dynamic categories, and Cloudinary image upload. Built using Next.js, postgresql, Zustand, tailwind.css.",
+      liveLink: "https://flexin.mazaharul.site",
+      githubLink: "https://github.com/devmazaharul/flexin"
+    },
+    {
+      name: "mazaPay - Online Payment Gateway",
+      description:"A secure online payment gateway with user authentication, transaction history, and real-time notifications. Built using Next.js, Node.js, PostgreSQL, and Express.js.",
+      liveLink: "https://pay.mazaharul.site",
+      githubLink: "https://github.com/devmazaharul/paywithmaza"
+    },
+    {
       name: "Glow Niba – Skincare eCommerce",
       description:
         "A complete product-based online store with seller basket, cart, dynamic categories, and Cloudinary image upload. Built using Next.js, MongoDB, Zustand, and Express.",
