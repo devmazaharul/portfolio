@@ -6,7 +6,7 @@ export default function NotFound() {
             <div className="max-w-lg w-full text-center">
                 <h1 className="text-7xl font-extrabold text-gray-900">404</h1>
                 <p className="mt-3 text-gray-600">
-                    Page not found — we couldn't locate the resource.
+                    Page not found — we couldn&apos;t locate the resource.
                 </p>
 
                 <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
