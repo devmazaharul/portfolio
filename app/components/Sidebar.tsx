@@ -59,7 +59,7 @@ const Sidebar = () => {
           width={120}
           height={200}
           src={
-            'https://amimazaharul.vercel.app/_next/image?url=%2Fmaza-original_processed1.jpg&w=640&q=75'
+            '/best_mazaharul_professional.PNG'
           }
         />
       </motion.div>
