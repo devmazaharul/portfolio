@@ -59,7 +59,7 @@ const Hero = () => {
             width={500}
             height={500}
             alt="Web Development"
-            src="/heroimg.webp"
+            src="/download (1).png"
             className="w-full h-[190px] md:h-[200px] object-contain "
           />
         </motion.div>

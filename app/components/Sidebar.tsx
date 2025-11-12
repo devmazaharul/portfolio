@@ -55,11 +55,11 @@ const Sidebar = () => {
       >
         <Image
           alt="owner image"
-          className="rounded-full border-2 border-blue-300 shadow-2xl shadow-gray-400 object-cover h-[130px] w-[120px] "
+          className="rounded-full border-2 border-blue-300 shadow-2xl shadow-gray-400 object-cover h-[120px] w-[120px] "
           width={120}
           height={200}
           src={
-            '/best_mazaharul_professional.PNG'
+            '/Image_mw970imw970imw97.png'
           }
         />
       </motion.div>
