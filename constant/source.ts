@@ -50,7 +50,7 @@ export const source = {
       name: "FlexIn – Ecommerce Platform",
       description:
         "A complete product-based online store wit cart, dynamic categories, and Cloudinary image upload. Built using Next.js, postgresql, Zustand, tailwind.css.",
-      liveLink: "https://flexin.mazaharul.site",
+      liveLink: "https://www.themaza.shop",
       githubLink: "https://github.com/devmazaharul/flexin"
     },
     {
