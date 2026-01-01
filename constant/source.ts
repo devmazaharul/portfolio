@@ -47,10 +47,17 @@ export const source = {
   ],
   projects: [
     {
+      name: "mazaAir — Smart Flight Search & Fare Comparison Platform",
+      description:
+        "mazaAir is a full-stack flight search application powered by real-time airline APIs, featuring advanced filtering, accurate time handling, and scalable backend architecture.",
+      liveLink: "https://air.themaza.shop/",
+      githubLink: "https://github.com/devmazaharul/airlines"
+    },
+    {
       name: "FlexIn – Ecommerce Platform",
       description:
         "A complete product-based online store wit cart, dynamic categories, and Cloudinary image upload. Built using Next.js, postgresql, Zustand, tailwind.css.",
-      liveLink: "https://www.themaza.shop",
+      liveLink: "https://themaza.shop",
       githubLink: "https://github.com/devmazaharul/flexin"
     },
     {
