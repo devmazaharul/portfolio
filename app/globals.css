@@ -223,3 +223,110 @@ body {
   }
 }
 
+
+
+/* globals.css */
+
+@import "tailwindcss";
+
+/* ─── Scrollbar Hide ─── */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* ─── Custom Scrollbar (for visible scrollbars) ─── */
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: #d1d5db transparent;
+}
+.scrollbar-thin::-webkit-scrollbar {
+  width: 4px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: #d1d5db;
+  border-radius: 20px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background-color: #9ca3af;
+}
+
+/* ─── Prevent Horizontal Overflow ─── */
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* ─── Smooth Scrolling ─── */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ─── Selection Color ─── */
+::selection {
+  background-color: rgba(59, 130, 246, 0.15);
+  color: #1e40af;
+}
+
+/* ─── Focus Visible ─── */
+*:focus-visible {
+  outline: 2px solid rgba(59, 130, 246, 0.5);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+/* ─── Safe Area (Mobile Notch) ─── */
+@supports (padding: env(safe-area-inset-bottom)) {
+  body {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* ─── Button Base Styles ─── */
+.btn {
+  @apply inline-flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-xl transition-all duration-300 cursor-pointer;
+}
+.btn-primary {
+  @apply bg-gray-900 text-white hover:bg-gray-800 shadow-md hover:shadow-lg active:scale-[0.97];
+}
+
+/* ─── Smooth Image Loading ─── */
+img {
+  content-visibility: auto;
+}
+
+/* ─── Typography Enhancement ─── */
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+p {
+  text-wrap: pretty;
+}
+
+/* ─── Animation Performance ─── */
+.will-change-transform {
+  will-change: transform;
+}
+
+/* ─── Glass Effect ─── */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* ─── Gradient Text Utility ─── */
+.text-gradient {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

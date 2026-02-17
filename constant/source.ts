@@ -1,4 +1,9 @@
-
+export const personalInfo={
+  email:"devmazaharul@gmail.com",
+  linkdine:"https://www.linkedin.com/in/mazaharul-islam-0948a333a",
+  facebook:"https://www.facebook.com/themazaharul",
+  github:'https://github.com/devmazaharul'
+}
 
 export const source = {
   name:"mazaharul islam",

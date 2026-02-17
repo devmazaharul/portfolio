@@ -3,7 +3,6 @@
 import React from "react";
 import { motion, useScroll } from "framer-motion";
 import Hero from "./components/Hero";
-import About from "./components/About";
 import Services from "./components/Services";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
@@ -23,7 +22,6 @@ const Page = () => {
       />
       <div className="space-y-4">
       <Hero/>
-      <About/>
       <Services/>
       <Projects/>
       <Education/>
