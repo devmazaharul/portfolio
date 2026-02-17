@@ -1,20 +1,18 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { personalInfo, source } from '@/constant/source';
 import {
   BsGithub,
   BsLinkedin,
-  BsTwitterX,
   BsEnvelopeFill,
   BsArrowUpRight,
   BsHeartFill,
   BsFacebook,
 } from 'react-icons/bs';
 import {
-  ArrowUp,
   Code2,
   Coffee,
   MapPin,
@@ -106,20 +104,17 @@ const FloatingParticle = ({
 // ═══════════════════════════════════════════════
 
 const Footer = () => {
-  const [showScrollTop, setShowScrollTop] = useState(false);
+
   const currentYear = new Date().getFullYear();
 
   useEffect(() => {
     const handleScroll = () => {
-      setShowScrollTop(window.scrollY > 400);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+
 
   return (
     <motion.footer

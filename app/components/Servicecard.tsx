@@ -6,7 +6,6 @@ import {
   ShieldCheck,
   Server,
   ArrowUpRight,
-  Sparkles,
   CheckCircle2,
   Layers,
   Code2,
@@ -14,7 +13,7 @@ import {
   MousePointerClick,
 } from 'lucide-react';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
-import React, { useState } from 'react';
+import React from 'react';
 
 // ─── Data Configuration ───
 const services = [
@@ -104,8 +103,6 @@ const TiltCard = ({
   children: React.ReactNode;
   className?: string;
 }) => {
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
   const rotateX = useSpring(useMotionValue(0), { stiffness: 150, damping: 20 });
   const rotateY = useSpring(useMotionValue(0), { stiffness: 150, damping: 20 });
 
@@ -175,7 +172,7 @@ const ServiceCard = ({
   service: (typeof services)[0];
   idx: number;
 }) => {
-  const [isHovered, setIsHovered] = useState(false);
+
 
   return (
     <TiltCard>
@@ -189,8 +186,6 @@ const ServiceCard = ({
           stiffness: 100,
         }}
         viewport={{ once: true }}
-        onHoverStart={() => setIsHovered(true)}
-        onHoverEnd={() => setIsHovered(false)}
         className="relative h-full group"
       >
         {/* Outer glow */}

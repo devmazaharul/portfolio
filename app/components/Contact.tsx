@@ -1,11 +1,11 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState} from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Commoncard from './Commoncard';
 import { toast } from 'sonner';
 import Link from 'next/link';
-import { personalInfo, source } from '@/constant/source';
+import { personalInfo } from '@/constant/source';
 import {
   Send,
   User,
@@ -17,9 +17,7 @@ import {
   MapPin,
   Clock,
   Globe,
-  Phone,
   Zap,
-  MousePointerClick,
   Loader2,
   Copy,
   Check,
@@ -31,9 +29,7 @@ import {
 import {
   BsGithub,
   BsLinkedin,
-  BsTwitterX,
   BsWhatsapp,
-  BsEnvelopeFill,
   BsArrowUpRight,
   BsFacebook,
 } from 'react-icons/bs';

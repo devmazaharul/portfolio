@@ -1,12 +1,12 @@
 'use client';
 
 import { colorShem } from '@/constant/source';
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { MdCleaningServices } from 'react-icons/md';
 import { SiHyperskill } from 'react-icons/si';
 import { GoProject } from 'react-icons/go';
-import { BookText, Sparkles, ChevronRight } from 'lucide-react';
+import { BookText, Sparkles } from 'lucide-react';
 import { LiaToolsSolid } from 'react-icons/lia';
 import { MdOutlineContactPage } from 'react-icons/md';
 import { GrInfo } from 'react-icons/gr';
@@ -155,7 +155,7 @@ const Commoncard = ({
 }) => {
   const { text_color } = colorShem;
   const config = tagConfig[tag];
-  const [isHovered, setIsHovered] = useState(false);
+
 
   return (
     <motion.div
@@ -163,8 +163,7 @@ const Commoncard = ({
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
       viewport={{ once: true, margin: '-50px' }}
-      onHoverStart={() => setIsHovered(true)}
-      onHoverEnd={() => setIsHovered(false)}
+
       className="relative w-full group/card"
     >
       {/* ─── Outer Glow on Hover ─── */}

@@ -3,7 +3,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, User, ChevronRight } from 'lucide-react';
+import { Menu, X,  ChevronRight } from 'lucide-react';
 import Sidebar from './Sidebar';
 import Image from 'next/image';
 import { source } from '@/constant/source';

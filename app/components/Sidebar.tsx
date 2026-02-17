@@ -110,28 +110,8 @@ const SoftGlow = ({ delay, x, y, size }: {
   />
 );
 
-// ─── Stat Card ───
-const StatCard = ({ value, label, delay }: {
-  value: string; label: string; delay: number;
-}) => (
-  <motion.div
-    initial={{ opacity: 0, y: 20, scale: 0.95 }}
-    animate={{ opacity: 1, y: 0, scale: 1 }}
-    transition={{ delay, type: 'spring', stiffness: 120, damping: 16 }}
-    whileHover={{ y: -3, scale: 1.03 }}
-    className="relative flex-1 cursor-default group"
-  >
-    <div className="relative overflow-hidden rounded-2xl border border-gray-200/70 bg-white/80 backdrop-blur-lg p-4 text-center transition-all duration-400 group-hover:border-blue-400/70 group-hover:bg-white/95 group-hover:shadow-lg group-hover:shadow-emerald-100/60">
-      <div className="absolute top-0 left-[20%] right-[20%] h-px bg-gradient-to-r from-transparent via-emerald-500/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-      <p className="text-[22px] font-black text-slate-900 tracking-tight relative z-10 tabular-nums">
-        {value}
-      </p>
-      <p className="text-[9px] text-gray-500 uppercase tracking-[0.25em] mt-1.5 font-bold relative z-10">
-        {label}
-      </p>
-    </div>
-  </motion.div>
-);
+
+
 
 // ─── Divider ───
 const LightDivider = () => (

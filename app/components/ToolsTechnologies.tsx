@@ -8,7 +8,6 @@ import { ImNpm } from 'react-icons/im';
 import {
   Sparkles,
   ArrowUpRight,
-  ExternalLink,
   Wrench,
   CheckCircle2,
   Zap,
@@ -541,7 +540,7 @@ export default function ToolsTechnologies() {
                       viewport={{ once: true }}
                       className={`w-8 h-8 rounded-lg ${tool.bg} border-2 border-white dark:border-zinc-900 flex items-center justify-center ${tool.color} shadow-2xl shadow-gray-100`}
                     >
-                      {React.cloneElement(tool.icon as any, {
+                      {React.cloneElement(tool.icon, {
                         className: 'w-4 h-4',
                       })}
                     </motion.div>

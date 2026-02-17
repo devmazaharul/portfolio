@@ -9,12 +9,10 @@ import {
   ArrowUpRight,
   Sparkles,
   Eye,
-  GitBranch,
   Star,
   Layers,
   Code2,
   Zap,
-  Filter,
   LayoutGrid,
   List,
   ChevronRight,
@@ -140,11 +138,17 @@ const ProjectCard = ({
   idx,
   palette,
 }: {
-  project: any;
+  project: {
+    name:string;
+    description:string;
+    liveLink:string;
+    githubLink:string;
+    techStack?:string[]
+  };
   idx: number;
   palette: (typeof colorPalettes)[0];
 }) => {
-  const [isHovered, setIsHovered] = useState(false);
+
 
   return (
     <motion.div
@@ -159,8 +163,7 @@ const ProjectCard = ({
         stiffness: 100,
       }}
       viewport={{ once: true }}
-      onHoverStart={() => setIsHovered(true)}
-      onHoverEnd={() => setIsHovered(false)}
+
       className="relative group h-full"
     >
       {/* Outer glow on hover */}

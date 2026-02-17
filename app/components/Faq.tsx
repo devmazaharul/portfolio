@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   ChevronDown,
-  Sparkles,
   MessageCircleQuestion,
   Lightbulb,
   Code2,

@@ -1,14 +1,10 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import Commoncard from './Commoncard';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import {
-  FaSchool,
   FaUniversity,
-  FaCalendarAlt,
-  FaAward,
-  FaMedal,
   FaBookOpen,
 } from 'react-icons/fa';
 import {
@@ -23,7 +19,6 @@ import {
   Star,
   Target,
   Zap,
-  ArrowUpRight,
   CheckCircle2,
   Trophy,
 } from 'lucide-react';
@@ -160,7 +155,6 @@ const EducationCard = ({
   edu: (typeof educationData)[0];
   idx: number;
 }) => {
-  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <motion.div
@@ -173,8 +167,7 @@ const EducationCard = ({
         stiffness: 100,
       }}
       viewport={{ once: true }}
-      onHoverStart={() => setIsHovered(true)}
-      onHoverEnd={() => setIsHovered(false)}
+
       className="relative group h-full"
     >
       {/* Outer glow */}
@@ -361,34 +354,7 @@ const EducationCard = ({
   );
 };
 
-// ─── Timeline Connector (for desktop) ───
-const TimelineConnector = () => (
-  <div className="hidden md:flex flex-col items-center justify-center gap-2 py-8">
-    <motion.div
-      className="w-px h-16 bg-gradient-to-b from-purple-300 to-emerald-300 dark:from-purple-500/30 dark:to-emerald-500/30 rounded-full"
-      initial={{ scaleY: 0 }}
-      whileInView={{ scaleY: 1 }}
-      transition={{ duration: 0.8, delay: 0.5 }}
-      viewport={{ once: true }}
-      style={{ transformOrigin: 'top' }}
-    />
-    <motion.div
-      initial={{ scale: 0 }}
-      whileInView={{ scale: 1 }}
-      transition={{ delay: 1, type: 'spring' }}
-      viewport={{ once: true }}
-      className="w-3 h-3 rounded-full bg-gradient-to-r from-purple-500 to-emerald-500 shadow-lg shadow-purple-200 dark:shadow-purple-900/30"
-    />
-    <motion.div
-      className="w-px h-16 bg-gradient-to-b from-emerald-300 to-gray-200 dark:from-emerald-500/30 dark:to-gray-700/30 rounded-full"
-      initial={{ scaleY: 0 }}
-      whileInView={{ scaleY: 1 }}
-      transition={{ duration: 0.8, delay: 0.8 }}
-      viewport={{ once: true }}
-      style={{ transformOrigin: 'top' }}
-    />
-  </div>
-);
+
 
 // ═══════════════════════════════════════════════
 //  MAIN COMPONENT

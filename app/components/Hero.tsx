@@ -2,13 +2,12 @@
 import { source } from '@/constant/source';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { GiNetworkBars } from 'react-icons/gi';
 import { IoFolderOpenOutline } from 'react-icons/io5';
-import { CiBookmarkPlus } from 'react-icons/ci';
 import { MessageSquareShare, Sparkles, ArrowRight, Download, Star, Zap, Code2, ExternalLink } from 'lucide-react';
-import { SiReaddotcv } from 'react-icons/si';
+
 
 // ─── Typing Animation Hook ───
 const useTypingEffect = (texts: string[], speed = 100, deleteSpeed = 50, pause = 2000) => {
