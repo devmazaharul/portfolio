@@ -2,12 +2,14 @@
 import { source } from '@/constant/source';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import Link from 'next/link';
 import { GiNetworkBars } from 'react-icons/gi';
 import { IoFolderOpenOutline } from 'react-icons/io5';
 import { MessageSquareShare, Sparkles, ArrowRight, Download, Star, Zap, Code2, ExternalLink } from 'lucide-react';
 
+// ─── Easing Constants (Fix TypeScript error) ───
+const EASE_OUT: [number, number, number, number] = [0.25, 0.46, 0.45, 0.94];
 
 // ─── Typing Animation Hook ───
 const useTypingEffect = (texts: string[], speed = 100, deleteSpeed = 50, pause = 2000) => {
@@ -117,7 +119,8 @@ const Hero = () => {
     2500
   );
 
-  const containerVariants = {
+  // ✅ Fixed: Properly typed variants
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -128,12 +131,13 @@ const Hero = () => {
     },
   };
 
-  const itemVariants = {
+  // ✅ Fixed: Using typed easing constant
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 25 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] },
+      transition: { duration: 0.6, ease: EASE_OUT },
     },
   };
 
@@ -143,7 +147,8 @@ const Hero = () => {
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
+        // ✅ Fixed: Using typed easing constant
+        transition={{ duration: 0.7, ease: EASE_OUT }}
         className="relative rounded-3xl border border-gray-200/60 dark:border-white/[0.06] overflow-hidden"
       >
         {/* ─── Background Effects ─── */}
@@ -311,7 +316,8 @@ const Hero = () => {
               className="col-span-2 mt-8 md:mt-0"
               initial={{ opacity: 0, x: 60, scale: 0.9 }}
               animate={{ opacity: 1, x: 0, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
+              // ✅ Fixed: Using typed easing constant
+              transition={{ duration: 0.8, delay: 0.3, ease: EASE_OUT }}
             >
               <div className="relative flex items-center justify-center">
                 {/* Glow behind image */}
