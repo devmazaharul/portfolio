@@ -11,7 +11,6 @@ import ContactForm from "./components/Contact";
 import Footer from "./components/Footer";
 
 const Page = () => {
-  const { scrollYProgress } = useScroll();
 
   return (
     <div className="relative">
