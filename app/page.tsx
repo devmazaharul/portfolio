@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { motion, useScroll } from "framer-motion";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Projects from "./components/Projects";
@@ -16,10 +15,6 @@ const Page = () => {
 
   return (
     <div className="relative">
-      <motion.div
-        className="fixed top-0 left-0 right-0 h-1 bg-gray-600 z-50 origin-left"
-        style={{ scaleX: scrollYProgress }}
-      />
       <div className="space-y-4">
       <Hero/>
       <Services/>
